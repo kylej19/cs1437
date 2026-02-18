@@ -1,0 +1,34 @@
+import java.util.*;
+import java.text.*;
+
+public class Car {
+    // methods: getPrice, displayMileage, showVIN, getYear
+    public static void main(String[] args) {
+	
+    }
+    public static void displayMileage(int mileage) {
+	DecimalFormat mileageFormat = new DecimalFormat(",###.##");
+	System.out.printf("This car has %d mileage", mileageFormat.format(mileage));
+    }
+    public static double getPrice(double price) {
+	return (price * 0.065) + price;
+    }
+    public static int getYear() {
+	Scanner kb = new Scanner(System.in);
+	System.out.printf("Enter year of the car: ");
+	int year = kb.nextInt();
+	return year;
+    }
+    public static String getVIN() {
+	Scanner kb = new Scanner(System.in);
+	System.out.printf("Enter car VIN: ");
+	String vin = kb.next();
+	return vin;
+    }
+    public static boolean hasAccidentRecord(int pin) {
+	if (showVIN().contains("s")) {
+	    return true;
+	}
+	return false;
+    }
+}
