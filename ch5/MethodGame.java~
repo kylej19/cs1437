@@ -1,0 +1,71 @@
+class MethodGame {
+
+    boolean switchPlanet(int num) {
+
+	//prints random fact according to number entered
+	switch (num) {
+	case 1:
+	    // Sun
+	    System.out.printf("The sun is the center of our solar system.\n");
+	    return true;
+	    break;
+	case 2:
+	    // Mercury
+	    System.out.printf("Mercury is the first planet in our solar system.\n");
+	    return true;
+	    break;
+	case 3:
+	    // Venus
+	    System.out.printf("Venus is the second planet in our solar system.\n");
+	    return true;
+	    break;
+	case 4:
+	    // Earth
+	    System.out.printf("Earth is the third planet in our solar system.\n");
+	    return true;
+	    break;
+	case 5:
+	    // Mars
+	    System.out.printf("Mars is the fourth planet in our solar system.\n");
+	    return true;
+	    break;
+	case 6:
+	    // Jupiter
+	    System.out.printf("Jupiter is the fifth planet in our solar system.\n");
+	    return true;
+	    break;
+	case 7:
+	    // Saturn
+	    System.out.printf("Saturn is the sixth planet in our solar system.\n");
+	    return true;
+	    break;
+	case 8:
+	    // Uranus
+	    System.out.printf("Uranus is the seventh planet in our solar system.\n");
+	    return true;
+	    break;
+	case 9:
+	    // Neptune
+	    System.out.printf("Neptune is the eigth planet in our solar system.\n");
+	    return true;
+	    break;
+	case 10:
+	    // Pluto
+	    System.out.printf("Pluto is the ninth planet in our solar system.\n");
+	    return true;
+	    break;
+	default:
+	    System.out.printf("%d is an invalid number!.\n", num);
+	    return false;
+	    break;
+	}
+
+    }
+
+    public static void main(String[] args) {
+
+	//code here
+
+    }
+
+}
