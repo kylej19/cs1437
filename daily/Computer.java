@@ -34,7 +34,7 @@ public class Computer {
 		return cost; 
 	} 
 	public String toString() {
-		return "vendor="+vendor+",device="+device+",year="+year+",cost="+cost+"\n";
+		return "vendor="+vendor+",device="+device+",year="+year+",cost="+cost+"  ";
 	}
 
        	// MUTATORS 
