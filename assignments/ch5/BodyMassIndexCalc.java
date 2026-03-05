@@ -18,8 +18,9 @@ public class BodyMassIndexCalc {
 		String response;
 
 		System.out.printf("Welcome to the BodyMassIndexCalc!\n");
-		System.out.printf("Input your height (in): ");
-		response = kb.nextLine();
+		//System.out.printf("Input your height (in): ");
+		//response = kb.nextLine();
+        response = JOptionPane.showInputDialog(null,"Enter your height (in): ");
 		double heightImperial = Double.parseDouble(response);
 		System.out.printf("Input your weight (lbs): ");
 		response = kb.nextLine();
