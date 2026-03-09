@@ -15,6 +15,7 @@ public class BodyMassIndexCalc {
 	public static void main (String[] args) {
 
 		Scanner kb = new Scanner(System.in);
+        DecimalFormat pattern = new DEcimalFormat("###.00");
 		String response;
 
 		System.out.printf("Welcome to the BodyMassIndexCalc!\n");
@@ -26,6 +27,10 @@ public class BodyMassIndexCalc {
 		//response = kb.nextLine();
         response = JOptionPane.showInputDialog(null,"Enter your weight (lbs): ");
 		double weightImperial = Double.parseDouble(response);
+
+        double bmi = calcualteBMI(height, weight);
+
+        JOptionPane.showMessageDialog(null,"Height: "+height+" in\nWeight: "+weight+" lbs\nBMI: "+pattern.format(bmi));
 
 	}
     public static double calculateBMI(double height, double weight) {
