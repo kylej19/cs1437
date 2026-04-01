@@ -1,5 +1,6 @@
 // Author: Kyle Johnson
-// my test class for reuse
+
+package RepairShop;
 
 import java.util.Scanner;
 import java.text.DecimalFormat;
@@ -50,18 +51,5 @@ public class Computer {
 	public void setPrice(int cost) { 
 		this.cost = cost; 
 	}
-
-	// program entrance
-	public static void main(String[] args) { 
-		Scanner kb = new Scanner(System.in); 
-		Computer pcs[] = { 
-			new Computer("apple", "macintosh", 1984, 2495.00), 
-			new Computer("ibm", "personal_computer", 1981, 1565.00) 
-		}; 
-
-		System.out.println(pcs[0]);
-		System.out.println(pcs[1]);
-
-		kb.close(); 
-	} 
+ 
 }

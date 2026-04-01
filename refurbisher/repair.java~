@@ -1,0 +1,10 @@
+// author: kyle johnson
+
+public class repair {
+
+    private char operation = '0';
+    private unit machine = null;
+    private ArrayList<unit> used_parts = new ArrayList<unit>();
+    private ArrayList<unit> new_parts = new ArrayList<unit>();
+
+}
