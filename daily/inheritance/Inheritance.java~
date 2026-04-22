@@ -1,0 +1,22 @@
+
+// INHERITANCE
+
+class House {
+	int bedrooms;
+	String zip;
+	double price;
+	public void hoa() {
+		System.out.print("$100/month ");
+	}
+}
+
+class newHouse extends House {
+	public void hoa() {
+		System.out.print("$200/month ");
+	}
+}
+
+
+public class Inheritance {
+
+}

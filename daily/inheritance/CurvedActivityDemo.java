@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class CurvedActivityDemo {
+	public static void main(String[] args) {
+		double score;
+		double curvePercent;
+
+		Scanner kb = new Scanner(System.in);
+		System.out.print("Enter a student's raw numeric score: ");
+		score = kb.nextDouble();
+
+		System.out.print("Enter the curve percentage: ");
+		curvePercent = kb.nextDouble();
+
+		CurvedActivity curvedExam = new CurvedActivity(curvePercent);
+		curvedExam.setScore(score);
+
+		System.out.println("The raw score is "+curvedExam.getRawScore()+" points.");
+		System.out.println("The curved score is "+curvedExam.getScore()+" points.");
+		System.out.println("The exam grade is "+curvedExam.getGrade()+".");
+	}
+}
