@@ -2,11 +2,11 @@ import java.util.*;
 
 public class Main {
 	public static void main(String[] args) {
-		//C.R.U.D. APPLICATION
-		//CREATE: GUESTS, ROOMS
-		//READ: ROOMS, GUEST DETAILS
-		//UPDATING: RESERVATIONS
-		//DELETE: GUESTS AFTER CHECKOUT
+		// C.R.U.D. APPLICATION
+		// CREATE: GUESTS, ROOMS
+		// READ: ROOMS, GUEST DETAILS
+		// UPDATING: RESERVATIONS
+		// DELETE: GUESTS AFTER CHECKOUT
 
 		Scanner kb = new Scanner(System.in);
 		HotelManagement mariott = new HotelManagement();
@@ -19,5 +19,6 @@ public class Main {
 		int roomNumber = kb.nextInt();
 		mariott.checkoutGuest(roomNumber);
 		mariott.showAvailableRooms();
+		kb.close();
 	}
 }

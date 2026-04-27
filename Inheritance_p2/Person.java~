@@ -1,0 +1,27 @@
+public class Person {
+    public void main(String[] args) {
+
+        System.out.println("Hello");
+
+        Occupation senior = new Student();
+    }
+}
+
+abstract class Occupation {
+    String type = "player";
+
+    abstract void displayRole();
+
+    public void showExperience() {
+        System.out.println(5);
+    }
+}
+
+class Student extends Occupation {
+    String name = "Doe";
+
+    @Override
+    void displayRole() {
+        System.out.println(name);
+    }
+}
