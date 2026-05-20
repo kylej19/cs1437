@@ -1,0 +1,52 @@
+public class Main {
+	public static void main(String[] srgs) {
+		// main
+	}
+}
+
+public class Person {
+
+	private String name;
+	private String phone;
+	private String email;
+	
+	public Person() {
+		name = "";
+		phone = "";
+		email = "";
+	}
+	public Person(String n, String p, String e) {
+		name = n;
+		phone = p;
+		email = e;
+	}
+
+	// ACCESSORS
+	public String getName() {
+		return name;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public String getEmail() {
+		return email;
+	}
+
+	// MUTATORS
+	public void setName(String n) {
+		name = n;
+	}
+	public void setName(String n) {
+		name = n;
+	}
+	public void setName(String n) {
+		name = n;
+	}
+
+
+}
+
+public class Employee extends {
+	// employee number
+
+}
